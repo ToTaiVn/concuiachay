@@ -226,20 +226,8 @@ ATab:AddSlider({
 		_G.DistanceMob = Value
 	end    
 })
-else
-  ATab:AddSlider1({
-	Name = "Farm Distance",
-	Min = 1,
-	Max = 100,
-	Default = 20,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Distance",
-	Callback = function(Value)
-		_G.DistanceMob = Value
-	end    
-})
 end
+
 spawn(function()
  while wait() do
  pcall(function()
