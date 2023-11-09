@@ -212,8 +212,6 @@ local Section = ATab:AddSection({
 	Name = "DISTANCE FARM PC ONLY!!"
 })
 
-if not game:GetService("UserInputService").TouchEnabled and not game:GetService("UserInputService").KeyboardEnabled == false then
-_G.DistanceMob = 20
 ATab:AddSlider({
 	Name = "Farm Distance",
 	Min = 1,
@@ -226,7 +224,6 @@ ATab:AddSlider({
 		_G.DistanceMob = Value
 	end    
 })
-end
 
 spawn(function()
  while wait() do
