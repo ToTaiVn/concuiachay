@@ -300,20 +300,7 @@ ATab:AddToggle({
 	end    
 })
 
-local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
-Camera:Stop()
-coroutine.wrap(function()
-    game:GetService("RunService").Stepped:Connect(function()
-        if _G.FastAttack then
-        if getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack then
-            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = 0
-            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude = 25
-            getupvalues(CombatFramework)[2]['activeController']:attack()
-        end
-        end
-    end)
-  end)()
+
 
 
 ATab:AddButton({
@@ -347,7 +334,7 @@ MTab:AddToggle({
       OrionLib:MakeNotification({
 	Name = "INFO",
 	Content = "THIS AUTO CHEST HAS BUG PLEASE CHOOSE AUTO CHEST BELOW!!!",
-	Image = "rbxassetid://11446825283",
+	Image = "rbxssetid://11446825283",
 	Time = 5
 })
 		Grab_Chest = Value
