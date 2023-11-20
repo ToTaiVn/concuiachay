@@ -1176,10 +1176,10 @@ local DTab = Window:MakeTab({
 })
 
 if OldWorld then
-TTab:AddLabel("Dungeon Raid Only in Sea 2 and 3")
+DTab:AddLabel("Dungeon Raid Only in Sea 2 and 3")
 
   if NewWorld or ThreeWorld then
-    local Section = TTab:AddSection({
+    local Section = DTab:AddSection({
 	Name = "USE IN DUNGEON ONLY!!!"
 })
 
